@@ -40,6 +40,28 @@ $modal-background-background-color:rgba(43, 43, 43, 0.8);
     left:2em;
 }
 
+.experience-header
+{
+    @extend .is-size-4;
+    font-weight:bold;
+    letter-spacing:1px;
+    color:#d66f93;
+}
+
+.role
+{
+    @extend .experience-header;
+    @extend .is-size-6;
+    font-style:italic;
+    border-bottom:2px solid lightgray;
+}
+
+.timetag
+{
+    color:darkgray;
+    float:right;
+}
+
 .header
 {
     position:relative;
@@ -112,6 +134,30 @@ $modal-background-background-color:rgba(43, 43, 43, 0.8);
     @include from ($desktop) {
         height:5em;
     }
+}
+
+.experience
+{
+    @include mobile {
+        margin-left:2em;
+        margin-right:2em;
+    }
+    @include from ($desktop) {
+        margin-left:4em;
+        margin-right:4em;
+    }
+}
+
+.experience-details-list
+{
+    list-style-type:square;
+    list-style-position:outside;
+    padding-top:12px;
+}
+
+.experience-details-list li
+{
+    padding-bottom:12px;
 }
 
 // *** styling for responsive embedded YouTube videos
@@ -195,11 +241,6 @@ $modal-background-background-color:rgba(43, 43, 43, 0.8);
 {
     margin-left:4em;
     padding-bottom:24px;
-}
-
-li
-{
-    color:#444444;
 }
 
 .devicons-list
