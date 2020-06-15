@@ -56,6 +56,13 @@ $modal-background-background-color:rgba(43, 43, 43, 0.8);
     border-bottom:2px solid lightgray;
 }
 
+.current
+{
+    @extend .experience-header;
+    @extend .is-size-6;
+    font-style:italic;
+}
+
 .timetag
 {
     color:darkgray;
